@@ -24,7 +24,7 @@ namespace SignalR.Comum
         {
             Context = serviceProvider.GetRequiredService<IHubContext<THub>>();
 
-            var importPlugin = new ImportPlugin<IPeriferico>(configuration["ControladorFolder"]);
+            var importPlugin = new ImportPlugin<TPeriferico>(configuration["ControladorFolder"]);
 
             Perifericos = new Dictionary<string, TPeriferico>();
 

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.Calculadora.JurosCompostos
 {
-    [Export(typeof(IPeriferico))]
+    [Export(typeof(ICalculadora))]
     public class CalculadoraJurosCompostos : PerifericoControllerBase<HubCalculadoraController>, ICalculadora
     {
         private const double IOF_FIXO = 0.0038;
